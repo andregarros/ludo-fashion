@@ -8,7 +8,7 @@
     <script src="js.js" defer></script>
 </head>
 <body>
-    <header>
+<header>
         <nav id="nav">
             <h1>LudoFashion</h1>
             <a href=""></a>
@@ -18,19 +18,19 @@
                     <img src="../imgs/icon-buscar.png" alt="" height="29px">
                 </button>
             </form>
-            <a href="index.html" class="icon-link">
+            <a href="index.php" class="icon-link">
                 <img src="../imgs/icon-casa.png" alt="" height="40px">
                 home
             </a>
-            <a href="formulario.html" class="icon-link">
+            <a href="cadastro.php" class="icon-link">
                 <img src="../imgs/icone-peson.png.png" alt="" height="40px">
                 cadastre-se
             </a>
-            <a href="ajuda.html" class="icon-link">
+            <a href="ajuda.php" class="icon-link">
                 <img src="../imgs/icone-help.png.png" alt="" height="40px">
                 duvidas
             </a>
-            <a href="" class="icon-link">
+            <a href="formulario.php" class="icon-link">
                 <img src="../imgs/icon-coração.png" alt="" height="40px">
                 favoritar
             </a>
@@ -43,12 +43,12 @@
             <nav>
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="index.php">Home</a>
                 </li>
-                <li><a href="cadastro.html" target="_self" class="cor">LOGIN/CADASTRO</a></li>
-                <li><a href="ajuda.html">Duvidas</a></li>
+                <li><a href="cadastro.php" target="_self" class="cor">LOGIN/CADASTRO</a></li>
+                <li><a href="ajuda.php">Duvidas</a></li>
                 <li><a href="">favoritar</a></li>
-                <li><a href="sobre.html">Sobre a loja</a></li>
+                <li><a href="sobre.php">Sobre a loja</a></li>
               </ul>
             </nav>
           </div>

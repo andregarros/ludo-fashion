@@ -82,7 +82,7 @@ header{
 table{
     background-color: var(--cor-terciaria);
     width: 1000px;
-    height: 350px;
+    height: 200px;
 }
 .tabela{
     display: flex;

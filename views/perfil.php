@@ -8,29 +8,29 @@
     <script src="js.js" defer></script>
 </head>
 <body>
-    <header>
+<header>
         <nav id="nav">
-            <h1 id="nav">LudoFashion</h1>
+            <h1>LudoFashion</h1>
             <a href=""></a>
             <form action="" id="form-buscar">
                 <input type="search" name="buscar" id="buscar">
                 <button type="submit" id="btn-buscar">
-                    <img src="../imgs/icon-buscar.png" alt="" height="29px" id="search">
+                    <img src="../imgs/icon-buscar.png" alt="" height="29px">
                 </button>
             </form>
-            <a href="index.html" class="icon-link">
+            <a href="index.php" class="icon-link">
                 <img src="../imgs/icon-casa.png" alt="" height="40px">
                 home
             </a>
-            <a href="formulario.html" class="icon-link">
+            <a href="cadastro.php" class="icon-link">
                 <img src="../imgs/icone-peson.png.png" alt="" height="40px">
                 cadastre-se
             </a>
-            <a href="ajuda.html" class="icon-link">
+            <a href="ajuda.php" class="icon-link">
                 <img src="../imgs/icone-help.png.png" alt="" height="40px">
                 duvidas
             </a>
-            <a href="" class="icon-link">
+            <a href="formulario.php" class="icon-link">
                 <img src="../imgs/icon-coração.png" alt="" height="40px">
                 favoritar
             </a>
@@ -38,21 +38,22 @@
         <div  class="btn-abrir-menu" id="btn-menu">
             <img src="../imgs/cardapio.png" alt="" width="40px"> 
         </div>
-    
-    <div class="menu-mobile" id="menu-mobile">
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li><a href="cadastro.html" target="_self" class="cor">LOGIN/CADASTRO</a></li>
-            <li><a href="ajuda.html">Duvidas</a></li>
-            <li><a href="">favoritar</a></li>
-            <li><a href="sobre.html">Sobre a loja</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="overlay-menu-mobile" id="overlay-menu-mobile"></div>
+        
+        <div class="menu-mobile" id="menu-mobile">
+            <nav>
+              <ul>
+                <li>
+                  <a href="index.php">Home</a>
+                </li>
+                <li><a href="cadastro.php" target="_self" class="cor">LOGIN/CADASTRO</a></li>
+                <li><a href="ajuda.php">Duvidas</a></li>
+                <li><a href="">favoritar</a></li>
+                <li><a href="sobre.php">Sobre a loja</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="overlay-menu-mobile" id="overlay-menu-mobile"></div>
+    </header>
 </header>
 <nav id="navbottom">
     <a href="">catálogo</a>
