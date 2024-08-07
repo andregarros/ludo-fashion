@@ -20,7 +20,7 @@ $id = $_GET['id'];
 $sql = "DELETE FROM produtos WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Produto removido com sucesso";
+    header('Location: produtos_cadastrados.php');
 } else {
     echo "Erro:";
 }

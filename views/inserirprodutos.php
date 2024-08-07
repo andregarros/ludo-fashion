@@ -93,13 +93,6 @@
                 <button type="submit">Adicionar Produto</button>
             </form>
         </div>
-        <div class="informacao">
-            <div class="formulario">
-                <form action="" method="post">
-                    <input type="file" name="img" id="">
-                  </form>
-            </div>
-            <div>
                 <table class="tabela2">
                     <tr>
                         <td>caracteristica do produto</td>

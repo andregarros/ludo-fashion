@@ -1,3 +1,38 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db_name = 'ludofashion';
+
+// Cria uma conexão com o banco de dados
+$connect = mysqli_connect($servername, $username, $password, $db_name);
+
+if (isset($_POST['btn-entrar'])):
+    // Escapa caracteres especiais para prevenir SQL Injection
+    $email = mysqli_escape_string($connect, $_POST['email']);
+    $senha = mysqli_escape_string($connect, $_POST['senha']);
+    
+    // Verifica se os campos de login e senha não estão vazios
+    if (empty($email) || empty($senha)):
+        echo 'Todos os campos devem ser preenchidos';
+    else:
+        // Executa a consulta SQL para verificar se o usuário existe
+        $sql = "SELECT email, senha FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+        $resultado = mysqli_query($connect, $sql);
+        
+        // Verifica se a consulta retornou algum resultado
+        if (mysqli_num_rows($resultado) > 0):
+            // Usuário encontrado - Você pode redirecionar ou definir a sessão aqui
+            echo 'Login bem-sucedido!'; // Mensagem de sucesso ou redirecionamento
+            header("Location: index.php");
+        else:
+            // Se nenhum usuário for encontrado, exibe a mensagem de login errado
+            echo "Login errado";
+        endif;
+    endif;
+endif;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,20 +96,20 @@
     </nav>
         <div id="father">
             <div class="Login">
-                <form action="" id="form">
+                <form action="" id="form" method = 'post'>
                     <h1>LOGIN</h1>
                     <div class="box-login">
                         <label for="email">Email</label>
-                        <input type="email" name="mail" id="email" required>
+                        <input type="email" name="email" id="email" required>
                     </div>
         
                     <div class="box-login">
                         <label for="senha">Senha</label>
-                        <input type="password" name="isenha" id="senha" required>
+                        <input type="password" name="senha" id="senha" required>
                     </div>
         
                    <div class="button" >
-                    <input type="submit" value="enviar">
+                    <input type="submit" name="btn-entrar" value="enviar">
                    </div>
                    <p class="ou">ou</p>
                    <div class="icons-img">
@@ -82,7 +117,7 @@
                         <img src="../imgs/icon-facebook.png" alt="" width="40px">
                    </div>
                    <div class="link">
-                    <a href="../cadastro.html">Cadastrar</a>
+                    <a href="cadastro.php">Cadastrar</a>
                     <a href="">Preciso de ajuda?</a>
                    </div>
                 </form>

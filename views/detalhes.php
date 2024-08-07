@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/detalhes.css">
+    <script src="js.js" defer></script>
 </head>
 <body>
 <header>
@@ -12,7 +13,7 @@
             <h1>LudoFashion</h1>
             <a href=""></a>
             <form action="" id="form-buscar">
-                <input type="search" name="buscar" id="buscar">
+                <input type="search" name="buscar" id="buscar" class="busca">
                 <button type="submit" id="btn-buscar">
                     <img src="../imgs/icon-buscar.png" alt="" height="29px">
                 </button>
@@ -90,7 +91,7 @@
                 <img src="../imgs/parte4.PNG" alt="" width="50px">
                 <img src="../imgs/parte3.PNG" alt="" width="50px">
             </div>
-           <div>
+           <div class = "img-principal">
              <img src="../imgs/blusa.jpg" alt="" height="600px">
             </div>
         </div>
