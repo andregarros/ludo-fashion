@@ -23,7 +23,7 @@ $descricao = $_POST['descricao'];
 
 // Atualizar dados no banco de dados
 $sql = "UPDATE produtos SET codigo='$codigo', nome='$nome', cor='$cor', tamanho='$tamanho', descricao='$descricao' WHERE id=$id";
-
+//se 
 if ($conn->query($sql) === TRUE) {
     echo "Produto atualizado com sucesso";
 } else {

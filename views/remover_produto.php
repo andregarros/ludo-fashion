@@ -2,9 +2,8 @@
 // Inserir informações de conexão com o banco de dados
 $servername = "localhost";
 $username = "root";
-$password = ""; // Insira sua senha aqui
-$dbname = "ludofashion"; // Nome do banco de dados
-
+$password = ""; /
+$dbname = "ludofashion"; 
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 

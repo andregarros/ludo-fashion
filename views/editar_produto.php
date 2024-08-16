@@ -10,10 +10,9 @@
     <header>
         <nav id="nav">
             <h1 id="nav">LudoFashion</h1>
-            <!-- ... (o restante do código do header permanece o mesmo) ... -->
+
         </nav>
-        <!-- ... (o restante do código do menu permanece o mesmo) ... -->
-    </header>
+        </header>
     <nav id="navbottom">
         <a href="">catálogo</a>
         <a href="sobre.html">Sobre a loja</a>
@@ -25,8 +24,8 @@
             // Inserir informações de conexão com o banco de dados
             $servername = "localhost";
             $username = "root";
-            $password = ""; // Insira sua senha aqui
-            $dbname = "ludofashion"; // Nome do banco de dados
+            $password = ""; 
+            $dbname = "ludofashion";
 
             // Criar conexão
             $conn = new mysqli($servername, $username, $password, $dbname);
@@ -49,7 +48,7 @@
                 echo "Produto não encontrado.";
                 exit();
             }
-
+            
             $conn->close();
             ?>
             <form action="atualizar_produto.php" method="POST">
